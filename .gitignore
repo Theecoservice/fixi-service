@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build output
+.next/
+out/
+
+# IDE
+.vscode/
+.idea/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.local
+
+# Debug
+npm-debug.log*
+yarn-error.log*
+
+# Angular old source
+src-angular/
+
+# Scripts
+copy-assets.js

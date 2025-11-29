@@ -1,0 +1,149 @@
+.navbar {
+  background-color: #426284;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.brand {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  margin-right: 1rem;
+}
+
+.toggler {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.togglerIcon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  position: relative;
+}
+
+.togglerIcon::before,
+.togglerIcon::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  left: 0;
+}
+
+.togglerIcon::before {
+  top: -8px;
+}
+
+.togglerIcon::after {
+  top: 8px;
+}
+
+.collapse {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav li {
+  margin: 0 15px;
+}
+
+.nav a {
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #95A3A4;
+}
+
+.langSwitcher {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.langBtns {
+  display: flex;
+  gap: 10px;
+}
+
+.langBtns button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+.langBtns button:hover,
+.langBtns button.active {
+  background: #B7D1DA;
+  color: #000;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .toggler {
+    display: block;
+  }
+
+  .collapse {
+    display: none;
+    width: 100%;
+    flex-basis: 100%;
+  }
+
+  .collapse.show {
+    display: flex;
+  }
+
+  .nav {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  .nav li {
+    margin: 10px 0;
+  }
+
+  .langSwitcher {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
