@@ -88,6 +88,13 @@
   cursor: not-allowed;
 }
 
+.error {
+  color: #dc3545;
+  font-size: 0.85rem;
+  text-align: left;
+  margin-top: -0.5rem;
+}
+
 .modal {
   position: fixed;
   top: 0;
