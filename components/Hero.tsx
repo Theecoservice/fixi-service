@@ -23,7 +23,7 @@ export default function Hero() {
           <div className={styles.contactInfo}>
             <p>
               <span className={styles.phoneIcon}>📞</span>
-              <a href="tel:+48575453995"> +48 (575) 453-995</a>
+              <a href="tel:+48733928772"> +48 (733) 928-772</a>
             </p>
           </div>
 
