@@ -1,5 +1,5 @@
 const BOT_TOKEN = '7833833391:AAGMv2ClReemDxndK91cOZTtjeeXSMJh9zM'
-const CHAT_ID = '-3308428511'
+const CHAT_ID = '-1003308428511'
 
 export async function sendTelegramMessage(message: string): Promise<boolean> {
   try {
